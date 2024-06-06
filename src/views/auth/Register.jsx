@@ -11,6 +11,8 @@ const Register = () => {
     password: '',
   });
 
+  const [isPrivacyChecked, setIsPrivacyChecked] = useState(false);
+
   const handleInput = (e) => {
     setState({
       ...state,
@@ -20,7 +22,15 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!isPrivacyChecked) {
+      alert('You must agree to the privacy policy & terms');
+      return;
+    }
     console.log(state);
+  };
+
+  const handlePrivacyChecked = (e) => {
+    setIsPrivacyChecked(e.target.checked);
   };
 
   return (
@@ -88,6 +98,8 @@ const Register = () => {
                 type='checkbox'
                 name='checkbox'
                 id='checkbox'
+                checked={isPrivacyChecked}
+                onChange={handlePrivacyChecked}
               />
               <label htmlFor='checkbox'>
                 {' '}
