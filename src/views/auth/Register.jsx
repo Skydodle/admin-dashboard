@@ -44,6 +44,7 @@ const Register = () => {
                 name='name'
                 placeholder='Name'
                 id='name'
+                autoComplete='name'
                 required
               />
             </div>
@@ -59,6 +60,7 @@ const Register = () => {
                 name='email'
                 placeholder='Email'
                 id='email'
+                autoComplete='email'
                 required
               />
             </div>
@@ -74,6 +76,7 @@ const Register = () => {
                 name='password'
                 placeholder='Password'
                 id='password'
+                autoComplete='current-password'
                 required
               />
             </div>
