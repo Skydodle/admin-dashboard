@@ -77,10 +77,13 @@ const Register = () => {
             </div>
             <div>
               <div className='w-full flex justify-center items-center mb-3'>
+                {/* This is the line before 'Or' */}
                 <div className='w-[45%] bg-slate-700 h-[1px]'></div>
+                {/* This is the 'Or' */}
                 <div className='w-[10% flex justify-center items-center'>
                   <span className='pb-1'>Or</span>
                 </div>
+                {/* This is the line after 'Or */}
                 <div className='w-[45%] bg-slate-700 h-[1px]'></div>
               </div>
               <div className='flex justify-center items-center gap-3'>
